@@ -61,6 +61,7 @@
   left: 50%;
   transform: translateX(-100px);
   z-index: 3;
+  background-size: 200px 200px;
 }
 
 .product-img-background {
@@ -76,7 +77,7 @@
 
 .product:first-child .product-img {
   background-image: url(../images/products/ice-cream-tablet-mobile-min.png);
-  background-size: 200px 200px;
+ 
 }
 
 .product:nth-child(2) .product-img {
@@ -86,7 +87,7 @@
 
 .product:last-child .product-img {
   background-image: url(../images/products/milkshake-tablet-mobile-min.png);
-  background-size: 200px 200px;
+  /* background-size: 200px 200px; */
 }
 
 .product:first-child .product-img-background {
@@ -174,16 +175,13 @@
 
   .product:first-child .product-img {
     background-image: url(../images/products/ice-cream-tablet-mobile@2x-min.png);
-    background-size: 200px 200px;
   }
 
   .product:nth-child(2) .product-img {
     background-image: url(../images/products/ice-coffee-tablet-mobile@2x-min.png);
-    background-size: 200px 200px;
   }
   .product:last-child .product-img {
     background-image: url(../images/products/milkshake-tablet-mobile@2x-min.png);
-    background-size: 200px 200px;
   }
 }
 
@@ -305,31 +303,27 @@
   }
 
   .product-img {
+    width: 302px;
+    height: 302px;
     position: absolute;
     top: 0;
     left: 50%;
     transform: translateX(-151px);
+    background-size: 302px 302px;
   }
 
   .product:first-child .product-img {
-    width: 302px;
-    height: 302px;
+
     background-image: url(../images/products/ice-cream-desktop-min.png);
-    background-size: 302px 302px;
   }
 
   .product:nth-child(2) .product-img {
-    width: 302px;
-    height: 302px;
     background-image: url(../images/products/ice-coffee-desktop-min.png);
-    background-size: 302px 302px;
+
   }
 
   .product:last-child .product-img {
-    width: 302px;
-    height: 302px;
     background-image: url(../images/products/milkshake-desktop-min.png);
-    background-size: 302px 302px;
   }
   .product-img-background {
     width: 302px;
@@ -373,17 +367,14 @@
 
     .product:first-child .product-img {
       background-image: url(../images/products/ice-cream-desktop@2x-min.png);
-      background-size: 302px 302px;
     }
 
     .product:nth-child(2) .product-img {
       background-image: url(../images/products/ice-coffee-desktop@2x-min.png);
-      background-size: 302px 302px;
     }
 
     .product:last-child .product-img {
       background-image: url(../images/products/milkshake-desktop@2x-min.png);
-      background-size: 302px 302px;
     }
   }
 }
