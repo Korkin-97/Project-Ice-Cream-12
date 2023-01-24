@@ -11,7 +11,7 @@
         </svg>
         <p class="logo-p">ce</p>
       </a>
-      <div class="header-burger burger-btn">
+      <div class="header-burger burger-btn" data-modal-open>
         <span></span>
       </div>
       <nav class="header-site-nav">
@@ -37,7 +37,7 @@
           ></path>
         </svg>
       </button>
-      <div class="header-burger-menu">
+      <div class="header-burger-menu" data-modal>
         <div class="burger-menu-content">
           <a href="#" class="header-logo-menu link">
             <svg width="28" height="55" id="icon-logo" viewBox="0 0 17 32">
@@ -55,10 +55,12 @@
             </li>
 
             <li>
+              
               <a class="anker-link-menu link" href="#how-its-made"
-                >How it’s made?</a
-              >
-            </li>
+                >How it’s made?</a>
+              
+              
+            </li data-modal-close1>
             <li>
               <a class="anker-link-menu link" href="#our-products"
                 >Our products</a
@@ -81,7 +83,7 @@
               ></path>
             </svg>
           </button>
-          <div class="header-close-burger burger-btn-close">
+          <div class="header-close-burger burger-btn-close" data-modal-close>
             <span></span>
           </div>
         </div>
