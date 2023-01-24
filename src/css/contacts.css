@@ -1,19 +1,7 @@
 .contacts {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   text-align: center;
   position: relative;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .contact-wrapp {
@@ -60,6 +48,11 @@
   border-top: 1px solid var(--line-color);
 }
 
+.contacts-adress {
+  padding-top: 24px;
+  border-top: 1px solid var(--line-color);
+}
+
 .contact-auth {
   color: var(--black-text-color);
   line-height: 1.6;
@@ -74,8 +67,7 @@
 }
 
 .sub-cont-contacts {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   width: 408px;
   display: flex;
   align-items: center;
@@ -84,6 +76,12 @@
 .btn-contacts {
   display: flex;
   align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  align-items: center;
+  text-align: center;
+  min-width: 196px;
 }
 
 .button-contacts {
@@ -92,17 +90,8 @@
   background-color: var(--accent);
   border-color: var(--accent);
   border: 2px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  align-items: center;
-  text-align: center;
   border: 0;
-  cursor: pointer;
   padding: 12px 39px;
-  border-radius: 10px;
-  min-width: 196px;
-  height: 42px;
 }
 
 .button-contacts:active,
@@ -122,18 +111,9 @@
   color: var(--black-text-color);
   fill: var(--black-text-color);
   background-color: var(--background);
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.29;
-  align-items: center;
-  text-align: center;
   border: 0;
-  cursor: pointer;
   padding: 12px 53px;
-  border-radius: 10px;
   border: 2px solid var(--accent);
-  min-width: 196px;
-  height: 42px;
 }
 
 .button-contacts-second:active,
@@ -167,8 +147,7 @@
 
   .button-contacts {
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
     margin-bottom: 16px;
   }
 
@@ -198,8 +177,14 @@
     padding: 40px 24px;
   }
 
+
   .contacts-list {
-    padding-top: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  
+  .contacts-adress {
+    padding-top: 32px;
   }
 
   .button-contacts {
