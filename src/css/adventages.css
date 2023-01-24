@@ -400,12 +400,12 @@
 }
 
 .backdrop-readmore.is-hidden .modal-readmore {
-  transform: translateX(-50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9);
 }
 
 .modal-readmore {
   position: absolute;
-  top: 0;
+  top: 50%;
   left: 50%;
 
   display: flex;
@@ -419,7 +419,7 @@
   background-color: var(--white-text-color);
   border-radius: 10px;
   border: 2px solid var(--accent);
-  transform: translateX(-50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
