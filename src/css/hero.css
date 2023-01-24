@@ -101,7 +101,7 @@
     margin-right: 0;
     max-width: 247px;
     width: 100%;
-    font-family: 'Seymour One';
+    font-family: 'Seymour One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -200,7 +200,7 @@
   .hero-title {
     max-width: 247px;
     margin-bottom: 32px;
-    font-family: 'Seymour One';
+    font-family: 'Seymour One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
@@ -293,7 +293,7 @@
   .hero-title {
     max-width: 247px;
     margin-bottom: 24px;
-    font-family: 'Seymour One';
+    font-family: 'Seymour One', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 26px;
