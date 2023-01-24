@@ -143,6 +143,10 @@
   bottom: 9;
 }
 .burger-menu-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding-top: 140px;
   margin-left: auto;
   margin-right: auto;
@@ -184,7 +188,7 @@
 .header-btn-menu {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 114px;
+  margin-bottom: 30px;
 
   width: 152px;
   height: 42px;
@@ -215,6 +219,9 @@
   fill: #fff;
 }
 .header-burger-menu {
+  overflow: auto;
+  position: fixed;
+  z-index: 5;
   visibility: hidden;
   pointer-events: none;
   transition-property: opacity, visibility;
@@ -442,6 +449,8 @@
   fill: #fff;
 }
 .header-burger-menu {
+  position: fixed;
+  z-index: 5;
   visibility: hidden;
   pointer-events: none;
   transition-property: opacity, visibility;
@@ -698,6 +707,8 @@
     color: var(--background);
 }
 .header-burger-menu {
+  position: fixed;
+  z-index: 5;
   visibility: hidden;
   pointer-events: none;
   transition-property: opacity, visibility;
