@@ -49,9 +49,44 @@ img {
   height: auto;
 }
 
-.button,
-.link {
+.button {
   cursor: pointer;
+  border-radius: 10px;
+  height: 42px;
+}
+
+.button:hover {
+  -webkit-animation: pulsate-fwd 0.4s ease-in-out 2 both;
+  animation: pulsate-fwd 0.4s ease-in-out 2 both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
 }
 
 .list {
@@ -61,6 +96,7 @@ img {
 
 .link {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .container {
