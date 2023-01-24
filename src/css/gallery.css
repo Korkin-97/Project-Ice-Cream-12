@@ -1,0 +1,292 @@
+
+
+
+
+
+
+
+.gallery {
+    background-size: 885px;
+    background-image: 
+    url(../images/background/Backgroud_mobile.jpg);
+
+    padding-bottom: 413px;
+}
+
+@media screen and (min-width: 480px) {
+    .gallery {
+        padding-bottom: 409px;
+    }
+    }
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) {
+.gallery  {
+    background-image:
+    url(../images/background/Backgroud_mobile@2x.jpg);
+}
+}
+
+@media screen and (min-width: 768px) {
+.gallery {
+    padding-bottom: 379px;
+    background-image: 
+    url(../images/background/Background_tablet-1.jpg);
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+.gallery  {
+    background-image:
+    url(../images/background/Background_tablet.jpg);
+}
+}
+
+@media screen and (min-width: 1200px) {
+.gallery {
+    padding-bottom: 228px;
+    background-image: 
+    url(../images/background/Backgroud_desktop.jpg);
+}
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+screen and (min-resolution: 192dpi),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+.gallery  {
+    background-image:
+    url(../images/background/Backgroud_desktop@2x.jpg);
+}
+}
+
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
+
+
+
+@media screen and (min-width: 480px) {
+    .gallery-div-main {
+        width: 440px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-div-main {
+        width: 705px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-div-main {
+        width: 968px;
+    }
+}
+
+.gallery-img-person {
+width: 85px;
+margin-top: 80px;
+margin-bottom: 32px;
+margin-left: auto;
+margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+.gallery-img-person {
+    margin-top: 140px;
+
+}
+}
+
+.gallery-img-main {
+    min-width: 280px;
+    min-height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 479px) {
+    .gallery-img-main {
+        max-width: 440px;
+        max-height: 204px;
+    }
+    }
+
+@media screen and (min-width: 480px) {
+.gallery-img-main {
+    width: 440px;
+    height: 204px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-img-main {
+        width: 704px;
+        height: 327px;
+        border-radius: 18px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+.gallery-img-main {
+    width: 1013px;
+    height: 422px;
+    border-radius: 24px;
+    }
+}
+
+.gallery-name-country {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.86;
+
+    margin-top: 32px;
+
+    color: var(--black-text-color);
+
+    text-align: center;
+}
+
+.gallery-reviews-text {
+    /* background: var(--background); */
+    padding: 35px 39px;
+
+    border-radius: 10px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2.55;
+
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-reviews-text {
+        width: 545px;
+
+        border-radius: 24px;
+
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.86;
+    }
+
+    .gallery-name-country {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-reviews-text {
+        width: 750px;
+        font-size: 16px;
+    }
+}
+
+.gallery-div-reviws {
+    width: 280px;
+
+    display: flex;
+    justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--background);
+    border-radius: 10px;
+
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-div-reviws {
+        width: 705px;
+
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-div-reviws {
+        width: 968px;
+
+    }
+}
+
+/* прохання не трогати цей контейнер, оскільки у нас слайдер без нього все ламається */
+.gallery-container {
+    min-width: 280px;
+    width: auto;
+    margin-right: 0;
+    
+}
+
+@media screen and (max-width: 479px) {
+    .gallery-div-responsible {
+        width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.swiper-slide-active {
+    margin-right: 0;
+}
+
+/* swiper */
+
+@media screen and (max-width: 479px) {
+    .mySwiper {
+        padding: 0 20px;
+    }
+}
+
+.swiper-pagination {
+    margin-top: 12px;
+}
+
+@media screen and (min-width: 768px) {
+    .swiper-pagination {
+        margin-top: 32px;
+    }
+}
+
+.gallery-backraund-images {
+    background-image: 
+    linear-gradient(var(--background) 3.5%, rgba(255, 0, 0, 0) 0, rgba(255, 255, 255, 0)),
+    url(../images/background/Backgroud_mobile.jpg);
+}
+
+@media screen and (min-width: 480px) {
+    .gallery-backraund-images {
+        background-image: 
+        linear-gradient(var(--background) 4.5%, rgba(255, 0, 0, 0) 0, rgba(255, 255, 255, 0) ),
+        url(../images/background/Backgroud_mobile.jpg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .gallery-backraund-images {
+        background-image: 
+        linear-gradient(var(--background) 14.2%, rgba(255, 0, 0, 0) 0, rgba(255, 255, 255, 0) ),
+        url(../images/background/Backgroud_mobile.jpg);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery-backraund-images {
+        background-image: 
+        linear-gradient(var(--background) 9.3%, rgba(255, 0, 0, 0) 0, rgba(255, 255, 255, 0) ),
+        url(../images/background/Backgroud_mobile.jpg);
+    }
+}

@@ -1,0 +1,100 @@
+:root {
+  --background: #84a178;
+  --rectangel-yellow: #efd478;
+  --rectangel-brown: #d6936d;
+  --rectangel-green: #aec6a5;
+  --accent: #f8d24e;
+  --white-text-color: #fcfcfc;
+  --black-text-color: #131313;
+  --gray-text-color: #ababab;
+  --copyright: #7a7a7a;
+  --line-color: #e1e1e1;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+}
+
+body {
+  margin: auto;
+  padding: 0;
+
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+
+  color: var(--white-text-color);
+  background-color: var(--background);
+
+  min-width: 320px;
+}
+
+textarea {
+  resize: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.button,
+.link {
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 280px;
+  width: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}

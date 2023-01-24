@@ -1,0 +1,675 @@
+.hero-btn-product {
+  margin-right: 12px;
+  padding: 0;
+  width: 108px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-decoration: none;
+  color: var(--primary-black-color);
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.hero-a-product {
+  padding: 8px 23px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-decoration: none;
+  color: var(--primary-black-color);
+}
+
+.hero-a-product:visited {
+  color: var(--primary-black-color);
+}
+
+.hero-a-product:focus {
+  outline: 3px solid #0a8817;
+  border-radius: 8px;
+  border: none;
+}
+
+.hero-a-product:hover {
+  outline: none;
+  border: none;
+}
+
+.hero-btn-product:hover,
+.hero-btn-product:focus {
+  outline: 2px solid #0a8817;
+  border: none;
+}
+
+.hero-btn-product:disabled {
+  outline: 2px solid #ababab;
+}
+
+.hero-btn-made {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration-line: underline;
+  border: none;
+  background-color: transparent;
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.hero-a-made {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: var(--accent);
+  transition-duration: .25s;
+  transition-timing-function: cubic-bezier(.4,0,.2,1);
+}
+
+.hero-btn-made:hover,
+.hero-a-made:hover {
+  color: #0a8817;
+  border: none;
+  outline: none;
+}
+
+.hero-btn-made:focus,
+.hero-a-made:focus {
+  color: var(--white-text-color);
+  border: none;
+  outline: none;
+}
+
+.hero-a-made:disabled {
+  color: #ababab;
+}
+
+@media (max-width: 479px) {
+  .container {
+    margin: 0 auto;
+  }
+  .hero-div-top {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .hero-div-item {
+    padding-top: 48px;
+    padding-bottom: 19px;
+  }
+  .hero-title {
+    margin-bottom: 32px;
+    margin-right: 0;
+    max-width: 247px;
+    width: 100%;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
+
+  .hero-ul {
+    display: none;
+  }
+
+  .hero-div-bottom {
+    position: relative;
+    min-height: 217px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .hero-div-img {
+    position: absolute;
+    bottom: 0;
+    left: 83px;
+    width: 177px;
+    height: 217px;
+    background-image: url(../images/hero/hero-ice-cream-mobile-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-img {
+      position: absolute;
+      bottom: 0;
+      left: 83px;
+      width: 177px;
+      height: 217px;
+      background-image: url(../images/hero/hero-ice-cream-mobile@2x-min.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+    }
+  }
+
+.hero-tumb{
+  display: none;
+}
+
+  .hero-div-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 320px;
+    height: 50px;
+    background-image: url(../images/hero/dots-mobile.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-dots {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: 320px;
+      height: 50px;
+      background-image: url(../images/hero/dots-mobile@2x.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  .hero-section {
+    padding-top: 40px;
+  }
+  .hero-div-top {
+    padding-left: 20px;
+  }
+  .hero-title {
+    max-width: 247px;
+    margin-bottom: 32px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
+
+  .hero-ul {
+    display: none;
+  }
+
+  .hero-div-bottom {
+    position: relative;
+    display: flex;
+    height: 217px;
+  }
+
+  .hero-tumb{
+  display: none;
+}
+
+  .hero-div-img {
+    position: absolute;
+    bottom: 0;
+    right: 40px;
+    width: 218px;
+    height: 267px;
+    background-image: url(../images/hero/hero-ice-cream-mobile-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-img {
+      position: absolute;
+      bottom: 0;
+      right: 40px;
+      width: 218px;
+      height: 267px;
+      background-image: url(../images/hero/hero-ice-cream-mobile@2x-min.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+    }
+  }
+  .hero-div-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 330px;
+    height: 52px;
+    background-image: url(../images/hero/dots-mobile.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-dots {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 330px;
+      height: 52px;
+      background-image: url(../images/hero/dots-mobile@2x.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .hero-section {
+    padding-top: 12px;
+  }
+  .hero-div-top {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .hero-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-title {
+    max-width: 247px;
+    margin-bottom: 24px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 33px;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
+
+.hero-ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.hero-li {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  color: var(--white-text-color);
+}
+
+.cafes {
+  margin-bottom: 20px;
+}
+
+.hero-numbers{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 28px;
+line-height: 34px;
+text-align: right;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--black-text-color);
+}
+
+  .hero-div-bottom {
+    position: relative;
+    height: 176px;
+  }
+
+  .hero-div-slider {
+    position: absolute;
+    bottom: 12px;
+    left: 32px;
+    margin-top: 42px;
+    width: 152px;
+    height: 152px;
+    background-image: url(../images/hero/plate-tablet-mobile-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-slider {
+      position: absolute;
+      bottom: 12px;
+      left: 32px;
+      margin-top: 42px;
+      width: 152px;
+      height: 152px;
+      background-image: url(../images/hero/plate-tablet-mobile@2x-min.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+    }
+  }
+
+    .hero-tumb{
+padding-top: 46px;
+margin-left: 210px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    width: 220px;
+  }
+
+  .hero-slider-text {
+    margin-bottom: 24px;
+    width: 150px;
+    height: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 140%;
+    position: absolute;
+    transform: translateX(1%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  }
+
+.hero-slider-text.is-open{
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+  .hero-btn-arrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--white-text-color);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hero-div-img {
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+    width: 268px;
+    height: 329px;
+    background-image: url(../images/hero/hero-ice-cream-tablet-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-img {
+      position: absolute;
+      bottom: 0;
+      right: 92px;
+      width: 268px;
+      height: 329px;
+      background-image: url(../images/hero/hero-ice-cream-tablet@2x-min.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 2;
+    }
+  }
+  .hero-div-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 768px;
+    height: 68px;
+    background-image: url(../images/hero/dots-tablet.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  @media (max-width: 767px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-dots {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 768px;
+      height: 68px;
+      background-image: url(../images/hero/dots-tablet.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero-section {
+    padding-top: 40px;
+  }
+  .hero-div-top {
+    padding-top: 40px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .hero-div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero-title {
+    max-width: 367px;
+    margin-bottom: 28px;
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: 0.04em;
+    color: var(--white-text-color);
+  }
+
+  .hero-btn-product {
+    margin-right: 34px;
+    width: 134px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .hero-a-product {
+  padding: 9px 31px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-decoration: none;
+}
+
+  .hero-btn-made {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+.hero-ul {
+  list-style: none;
+  padding: 0;
+  text-align: right;
+}
+
+.hero-li {
+  font-family: 'Montserrat';
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 17px;
+  color: var(--white-text-color);
+}
+
+.cafes {
+  margin-bottom: 20px;
+}
+
+.hero-numbers{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 900;
+font-size: 46px;
+line-height: 56px;
+text-align: right;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: var(--black-text-color);
+}
+
+  .hero-div-slider {
+    position: absolute;
+    bottom: 65px;
+    left: 16px;
+    margin-top: 42px;
+    width: 225px;
+    height: 225px;
+    background-image: url(../images/hero/plate-desktop-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-slider {
+      bottom: 65px;
+      left: 16px;
+      margin-top: 42px;
+      width: 225px;
+      height: 225px;
+      background-image: url(../images/hero//plate-desktop@2x-min.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+
+  .hero-tumb{
+padding-top: 180px;
+margin-left: 260px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 120px;
+    width: 220px;
+  }
+
+  .hero-slider-text {
+    margin-bottom: 24px;
+    width: 230px;
+    height: 80px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    position: absolute;
+    transform: translateX(1%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+  }
+
+.hero-slider-text.is-open{
+    transform: translateX(-100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+
+  .hero-btn-arrow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-left: 0;
+    background-color: transparent;
+    border: none;
+    fill: var(--white-text-color);
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .hero-div-bottom {
+    position: relative;
+    height: 402px;
+  }
+  .hero-div-img {
+    position: absolute;
+    bottom: 0;
+    right: 92px;
+    width: 456px;
+    height: 560px;
+    background-image: url(../images/hero/hero-ice-cream-desktop-min.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+  }
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-img {
+      position: absolute;
+      bottom: 0;
+      right: 92px;
+      width: 456px;
+      height: 560px;
+      background-image: url(../images/hero/hero-ice-cream-desktop@2x-min.png);
+      background-size: cover;
+      background-position: center;
+    }
+  }
+  .hero-div-dots {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 1200px;
+    height: 384px;
+    background-image: url(../images/hero/dots-dekstop.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+  }
+  @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-div-dots {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 1200px;
+      height: 384px;
+      background-image: url(../images/hero/dots-dekstop@2x.png);
+      background-size: cover;
+      background-position: center;
+      z-index: 1;
+    }
+  }
+}
