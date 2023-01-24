@@ -153,7 +153,7 @@
 
   .sub-cont-contacts {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 200px;
   }
 }
@@ -177,12 +177,11 @@
     padding: 40px 24px;
   }
 
-
   .contacts-list {
     padding-top: 32px;
     padding-bottom: 32px;
   }
-  
+
   .contacts-adress {
     padding-top: 32px;
   }
