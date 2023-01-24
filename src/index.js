@@ -13,6 +13,7 @@ var swiper = new Swiper('.mySwiper', {
     close1ModalBtn: document.querySelector('[data-modal-close1]'),
     close2ModalBtn: document.querySelector('[data-modal-close2]'),
     close3ModalBtn: document.querySelector('[data-modal-close3]'),
+    close4ModalBtn: document.querySelector('[data-modal-close4]'),
     modal: document.querySelector('[data-modal]'),
   };
 
@@ -21,6 +22,7 @@ var swiper = new Swiper('.mySwiper', {
   refs.close1ModalBtn.addEventListener('click', toggleModal);
   refs.close2ModalBtn.addEventListener('click', toggleModal);
   refs.close3ModalBtn.addEventListener('click', toggleModal);
+  refs.close4ModalBtn.addEventListener('click', toggleModal)
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
