@@ -64,26 +64,103 @@
                   <a class="link" href="./index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="link" href="#how-its-made" data-modal-close1
-                    >How it’s made?</a
-                  >
+                  <a class="link" href="#how-its-made" data-modal-close1>How it’s made?</a>
                 </li>
                 <li class="nav-item">
-                  <a class="link" href="#our-products" data-modal-close2
-                    >Our products</a
-                  >
+                  <a class="link" href="#our-products" data-modal-close2>Our products</a>
                 </li>
                 <li class="nav-item">
                   <a class="link" href="#contacts" data-modal-close3>Contact</a>
                 </li>
               </ul>
             </nav>
-            <button type="button" class="header-btn button">
+            <button type="button" class="header-btn button" icecream-modal-open>
               Buy now
               <svg class="header-decoration-btn" width="12" height="12">
                 <use href="./images/Icons.svg#icon-ep_arrow-right-bold"></use>
               </svg>
             </button>
+
+            <div class="backdrop is-hidden" icecream-modal>
+              <div class="modal-product">
+                <button type="button" class="close-modal" icecream-modal-close>
+                  <svg>
+                    <use href="./images/Icons.svg#icon-clarity_close-line"></use>
+                  </svg>
+                </button>
+
+                <h2 class="text-modal-product">
+                  Buy now
+                </h2>
+                <form class="modal-buynow-form">
+                  <ul class="ice-cream-list link ">
+                    <li class="wrap-content link">
+                      <img class="img-ice-cream" srcset="./images/products/ice-cream-modal-min.png 1x, ./images/products/ice-cream-modal@2x-min.png 2x"
+                        src="./images/products/ice-cream-modal-min.png" alt="ice coffee" width="132">
+                      <span class="circle-ice-cream"></span>
+                      <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
+                        <input class="from-checkbox" type="checkbox" name="user-policy" required="">
+                        <span class="icon-checkbox"></span>
+                        <div class="container-item-cream">
+                          <h3 class="text-icecream">ice cream</h3>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="wrap-content link">
+                      <img class="img-ice-cream" srcset="./images/products/ice-coffee-tablet-mobile-min.png 1x, ./images/products/ice-coffee-tablet-mobile@2x-min.png 2x"
+                        src="./images/products/ice-coffee-tablet-mobile-min.png" alt="ice coffee" width="132">
+                      <span class="circle-ice-cream"></span>
+                      <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
+                        <input class="from-checkbox" type="checkbox" name="user-policy" required="">
+                        <span class="icon-checkbox-ice-coffee"></span>
+                        <div class="container-item-cream">
+                          <h3 class="text-icecream">ice coffee</h3>
+                        </div>
+                      </label>
+                    </li>
+                    <li class="wrap-content link">
+                      <img class="img-ice-cream" srcset="./images/products/milkshake-tablet-mobile-min.png 1x, ./images/products/milkshake-modal@2x-min.png 2x"
+                        src="./images/products/milkshake-tablet-mobile-min.png" alt="milkshake" width="132">
+                      <span class="circle-ice-cream"></span>
+                      <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
+                        <input class="from-checkbox" type="checkbox" name="user-policy" required="">
+                        <span class="icon-checkbox-milkshake"></span>
+                        <div class="container-item-cream">
+                          <h3 class="text-icecream">milkshake</h3>
+                        </div>
+                      </label>
+                    </li>
+                  </ul>
+                </form>
+                <div class="container-form">
+                  <form class="form-modal">
+                    <div class="modal-input-container">
+                      <input class="sphere-input" type="text" required=' ' autocomplete="off" placeholder='Name'>
+
+                      <label class="label-modal" for="text"></label>
+                    </div>
+                    <div class="modal-input-container">
+
+                      <input class="sphere-input " type="tel" id="phone" name="phone_number" required=' '
+                        autocomplete="off" title="380-000-00-00" pattern="[0]{1}[0-9]{9}" placeholder='Phone'>
+                      <label class="label-modal" for="phone">
+                      </label>
+                    </div>
+                    <div class="modal-input-container">
+
+                      <textarea class="textarea-modal" name="comment" id="comment" rows="5"
+                        placeholder='Comment'></textarea>
+                      <label class="label-modal" for="comment">
+                      </label>
+
+                    </div>
+                    <button class="btn-modal" type="submit">
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
