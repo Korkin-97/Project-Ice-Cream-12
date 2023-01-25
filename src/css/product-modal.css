@@ -40,12 +40,6 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .modal-product {
-    width: 568px;
-  }
-}
-
 .close-modal {
   position: absolute;
   top: 12px;
@@ -126,6 +120,7 @@
   height: 198px;
   display: inline-block;
   position: relative;
+  cursor: url('../images/cursor_yellow.svg'), pointer;
 }
 
 .img-ice-cream {
@@ -313,6 +308,7 @@
 
 @media screen and (min-width: 768px) {
   .sphere-input {
+    width: 352px;
     margin-bottom: 20px;
   }
 
@@ -328,6 +324,10 @@
     line-height: 140%;
     color: #131313;
   }
+
+  .textarea-modal {
+    width: 352px;
+  }
 }
 
 .textarea-modal {
@@ -340,7 +340,7 @@
 
   padding-left: 12px;
   padding-top: 8px;
-  
+
 }
 
 .btn-modal {
@@ -377,10 +377,8 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .btn-modal {
     margin-top: 32px;
     margin-bottom: 32px;
   }
 }
-
