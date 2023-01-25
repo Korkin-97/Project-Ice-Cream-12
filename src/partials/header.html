@@ -1,156 +1,62 @@
 <header class="header">
-  <div class="container">
-    <div class="container-header">
-      <a href="#" class="header-logo link">
+  <div class="container-header">
+    <div class="site-logo">
+      <a href="./index.html" class="header-logo link">
         <svg width="28" height="55">
           <use href="./images/Icons.svg#icon-Logo"></use>
         </svg>
-        <p class="logo-p">ce</p>
+        <p class="logo-text">ce</p>
       </a>
-      <div class="header-burger burger-btn" data-modal-open>
-        <span></span>
+    </div>
+    <button class="header-burger burger-btn" data-menu-open>
+      <svg class="icon-burger" width="32" height="32">
+        <use href="./images/Icons.svg#icon-eva_menu-fill"></use>
+      </svg>
+    </button>
+    <div class="mobile-menu" data-menu>
+      <div class="menu-logo">
+        <a href="./index.html" class="header-logo link">
+          <svg width="28" height="55">
+            <use href="./images/Icons.svg#icon-Logo"></use>
+          </svg>
+          <p class="logo-text">ce</p>
+        </a>
       </div>
-      <nav class="header-site-nav">
-        <ul class="header-list list">
-          <li><a class="link" href="#">Home</a></li>
-          <li>
-            <a class="link" href="#how-its-made">How it’s made?</a>
-          </li>
-          <li><a class="link" href="#our-products">Our products</a></li>
-          <li><a class="link" href="#contacts">Contact</a></li>
-        </ul>
-      </nav>
-      <button type="button" class="header-btn button">
-        Buy now
-        <svg class="header-decoration-btn" ; viewBox="0 0 22 32" width="5.75" height="10">
-          <path
-            d="M3.104 0.726c-0.434 0.434-0.702 1.034-0.702 1.696s0.268 1.262 0.702 1.696l11.878 11.882-11.878 11.878c-0.399 0.427-0.644 1.003-0.644 1.636 0 1.325 1.075 2.4 2.4 2.4 0.633 0 1.209-0.245 1.638-0.645l-0.001 0.001 13.578-13.574c0.434-0.434 0.702-1.034 0.702-1.696s-0.268-1.262-0.702-1.696l-13.578-13.578c-0.434-0.434-1.034-0.702-1.696-0.702s-1.262 0.268-1.696 0.702l0-0z">
-          </path>
-        </svg>
-      </button>
-      <div class="header-burger-menu" data-modal>
-        <div class="burger-menu-content">
-          <a href="#" class="header-logo-menu link">
-
-            <svg width="28" height="55">
-              <use href="./images/Icons.svg#icon-Logo"></use>
-
-
-            </svg>
-            <p class="logo-p-menu">ec</p>
-          </a>
-          <ul class="link-menu list">
-            <li>
-              <a class="anker-link-menu link" data-modal-close4 href="index.html">Home</a>
+      <div class="menu-container">
+        <button class="close-button-menu" type="button" data-menu-close>
+          <svg class="close-menu-icon" width="32" height="32">
+            <use href="./images/Icons.svg#icon-clarity_close-line"></use>
+          </svg>
+        </button>
+        <nav class="header-site-nav">
+          <ul class="header-list list">
+            <li class="nav-item">
+              <a class="link" href="./index.html">Home</a>
             </li>
-            <li>
-              <a class="anker-link-menu link" data-modal-close1 href="#how-its-made">How it’s made?</a>
+            <li class="nav-item">
+              <a class="link" href="#how-its-made">How it’s made?</a>
             </li>
-            <li>
-              <a class="anker-link-menu link" data-modal-close2 href="#our-products">Our products</a>
+            <li class="nav-item">
+              <a class="link" href="#our-products">Our products</a>
             </li>
-            <li>
-              <a class="anker-link-menu link" data-modal-close3 href="#contacts">Contact</a>
+            <li class="nav-item">
+              <a class="link" href="#contacts">Contact</a>
             </li>
           </ul>
-          <button type="button" class="header-btn-menu" icecream-modal-open>
-            Buy now
-            <svg class="header-decoration-btn" viewBox="0 0 22 32" width="5.75" height="10">
-              <path
-                d="M3.104 0.726c-0.434 0.434-0.702 1.034-0.702 1.696s0.268 1.262 0.702 1.696l11.878 11.882-11.878 11.878c-0.399 0.427-0.644 1.003-0.644 1.636 0 1.325 1.075 2.4 2.4 2.4 0.633 0 1.209-0.245 1.638-0.645l-0.001 0.001 13.578-13.574c0.434-0.434 0.702-1.034 0.702-1.696s-0.268-1.262-0.702-1.696l-13.578-13.578c-0.434-0.434-1.034-0.702-1.696-0.702s-1.262 0.268-1.696 0.702l0-0z">
-              </path>
-            </svg>
-          </button>
-          <div class="backdrop is-hidden" icecream-modal>
-            <div class="modal-product">
-              <button type="button" class="close-modal" icecream-modal-close>
-                <svg>
-                  <use href="./images/Icons.svg#icon-clarity_close-line"></use>
-                </svg>
-              </button>
-
-              <h2 class="text-modal-product">
-                Buy now
-              </h2>
-              <form class="modal-buynow-form">
-                <ul class="ice-cream-list link ">
-                  <li class="wrap-content link">
-                    <img class="img-ice-cream"
-                      srcset="./images/products/ice-cream-modal-min.png 1x, ./images/products/ice-cream-modal@2x-min.png 2x"
-                      src="./images/products/ice-cream-modal-min.png" alt="ice coffee" width="132">
-                    <span class="circle-ice-cream"></span>
-                    <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
-                      <input class="from-checkbox" type="checkbox" name="user-policy" required="">
-                      <span class="icon-checkbox"></span>
-                      <div class="container-item-cream">
-                        <h3 class="text-icecream">ice cream</h3>
-                      </div>
-                    </label>
-                  </li>
-                  <li class="wrap-content link">
-                    <img class="img-ice-cream"
-                      srcset="./images/products/ice-coffee-tablet-mobile-min.png 1x, ./images/products/ice-coffee-tablet-mobile@2x-min.png 2x"
-                      src="./images/products/ice-coffee-tablet-mobile-min.png" alt="ice coffee" width="132">
-                    <span class="circle-ice-cream"></span>
-                    <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
-                      <input class="from-checkbox" type="checkbox" name="user-policy" required="">
-                      <span class="icon-checkbox-ice-coffee"></span>
-                      <div class="container-item-cream">
-                        <h3 class="text-icecream">ice coffee</h3>
-                      </div>
-                    </label>
-                  </li>
-                  <li class="wrap-content link">
-                    <img class="img-ice-cream"
-                      srcset="./images/products/milkshake-tablet-mobile-min.png 1x, ./images/products/milkshake-modal@2x-min.png 2x"
-                      src="./images/products/milkshake-tablet-mobile-min.png" alt="milkshake" width="132">
-                    <span class="circle-ice-cream"></span>
-                    <label lass="buycheck" type="checkbox" name="product-ice" value="icecream">
-                      <input class="from-checkbox" type="checkbox" name="user-policy" required="">
-                      <span class="icon-checkbox-milkshake"></span>
-                      <div class="container-item-cream">
-                        <h3 class="text-icecream">milkshake</h3>
-                      </div>
-                    </label>
-                  </li>
-                </ul>
-              </form>
-              <div class="container-form">
-                <form class="form-modal">
-                  <div class="modal-input-container">
-                    <input class="sphere-input input-modal-name" type="text" required=' ' autocomplete="off"
-                      placeholder='Name'>
-
-                    <label class="label-modal" for="text"></label>
-                  </div>
-                  <div class="modal-input-container">
-
-                    <input class="sphere-input input-modal-phone name" type="tel" id="phone" name="phone_number"
-                      required=' ' autocomplete="off" title="380-000-00-00" pattern="[0]{1}[0-9]{9}"
-                      placeholder='Phone'>
-                    <label class="label-modal" for="phone">
-                    </label>
-                  </div>
-                  <div class="modal-input-container">
-
-                    <textarea class="textarea-modal" name="comment" id="comment" rows="5"
-                      placeholder='Comment'></textarea>
-                    <label class="label-modal" for="comment">
-                    </label>
-
-                  </div>
-                  <button class="btn-modal" type="submit">
-                    Submit
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-          <div class="header-close-burger burger-btn-close" data-modal-close>
-            <span></span>
-          </div>
-        </div>
+        </nav>
+        <button type="button" class="header-btn button">
+          Buy now
+          <svg class="header-decoration-btn" width="12" height="12">
+            <use href="./images/Icons.svg#icon-ep_arrow-right-bold"></use>
+          </svg>
+        </button>
       </div>
     </div>
+    <button type="button" class="header-btn-tablet button">
+      Buy now
+      <svg class="header-decoration-btn" width="12" height="12">
+        <use href="./images/Icons.svg#icon-ep_arrow-right-bold"></use>
+      </svg>
+    </button>
   </div>
 </header>

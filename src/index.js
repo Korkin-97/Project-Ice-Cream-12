@@ -8,24 +8,16 @@ var swiper = new Swiper('.mySwiper', {
 
 (() => {
   const refs = {
-    openModalBtn: document.querySelector('[data-modal-open]'),
-    closeModalBtn: document.querySelector('[data-modal-close]'),
-    close1ModalBtn: document.querySelector('[data-modal-close1]'),
-    close2ModalBtn: document.querySelector('[data-modal-close2]'),
-    close3ModalBtn: document.querySelector('[data-modal-close3]'),
-    close4ModalBtn: document.querySelector('[data-modal-close4]'),
-    modal: document.querySelector('[data-modal]'),
+    openMenuBtn: document.querySelector('[data-menu-open]'),
+    closeMenuBtn: document.querySelector('[data-menu-close]'),
+    menu: document.querySelector('[data-menu]'),
   };
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
+  refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
-  refs.openModalBtn.addEventListener('click', toggleModal);
-  refs.closeModalBtn.addEventListener('click', toggleModal);
-  refs.close1ModalBtn.addEventListener('click', toggleModal);
-  refs.close2ModalBtn.addEventListener('click', toggleModal);
-  refs.close3ModalBtn.addEventListener('click', toggleModal);
-  refs.close4ModalBtn.addEventListener('click', toggleModal)
-
-  function toggleModal() {
-    refs.modal.classList.toggle('is-hidden');
+  function toggleMenu() {
+    document.body.classList.toggle('menu-open');
+    refs.menu.classList.toggle('is-open');
   }
 })();
 
