@@ -324,10 +324,6 @@
     line-height: 140%;
     color: #131313;
   }
-
-  .textarea-modal {
-    width: 352px;
-  }
 }
 
 .textarea-modal {
@@ -341,6 +337,12 @@
   padding-left: 12px;
   padding-top: 8px;
 
+}
+
+@media screen and (min-width: 768px) {
+  .textarea-modal {
+    width: 352px;
+  }
 }
 
 .btn-modal {
