@@ -94,18 +94,78 @@
 
   <div class="sub-cont-contacts">
 
-    <button type="button" class="button-contacts btn-contacts button">
+    <button type="button" class="button-contacts btn-contacts button" map-modal-open>
 
       Our Locations<svg class="contacts-btn-icon" width="12" height="12">
         <use href="./images/Icons.svg#icon-ep_arrow-right-bold"></use>
       </svg>
     </button>
 
-    <button type="button" class="button-contacts-second btn-contacts button">
+    <div class="backdrop is-hidden" map-modal>
+      <div class="modal map">
+        <button class="close-button-readmore" map-modal-close>
+          <svg class="close-icon-readmore">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="title-readmore">Our Locations</p>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.23443639991!2d36.2858247!3d49.99459135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0YwsINCj0LrRgNCw0LjQvdCw!5e0!3m2!1sru!2sus!4v1674434033906!5m2!1sru!2sus"
+          style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          class="map-google"></iframe>
+        <form>
+          <button type="button" class="button button-map">
+            <a href="https://www.google.com/maps/place/%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2,+%D0%A5%D0%B0%D1%80%D1%8C%D0%BA%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0/@49.9947277,36.1457423,11z/data=!3m1!4b1!4m5!3m4!1s0x4127a09f63ab0f8b:0x2d4c18681aa4be0a!8m2!3d49.9935051!4d36.2303782"
+              target="_blank">Open map</a>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <button type="button" class="button-contacts-second btn-contacts button" franchise-modal-open>
 
       Franchise<svg class="contacts-btn-icon" width="12" height="12">
         <use href="./images/Icons.svg#icon-ep_arrow-right-bold"></use>
       </svg>
     </button>
+
+    <div class="backdrop is-hidden" franchise-modal>
+      <div class="modal franchise">
+        <button class="close-button-readmore" franchise-modal-close>
+          <svg class="close-icon-readmore">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <p class="title-readmore">Thank you for your interest in owning an Ice Cream shop</p>
+        <p class="discription-readmore">Due to the overwhelming volume of franchise requests we are not accepting new
+          franchisee applications at this time. Once the application process resumes, we will contact you for
+          further information. Please fill out the contact information below and we will reach out for additional
+          information. We appreciate your patience.</p>
+        <form class="modal-form">
+          <div class="modal-form-item">
+            <label for="name">
+              <input type="text" name="name" id="name" class="modal-form-input" placeholder="Name" required />
+            </label>
+          </div>
+    
+          <div class="modal-form-item">
+            <label for="phone">
+              <input type="tel" name="phone" id="phone" class="modal-form-input" placeholder="Phone" required />
+            </label>
+          </div>
+          <div class="modal-form-item">
+            <label for="mail">
+              <input type="email" name="mail" id="mail" class="modal-form-input" placeholder="Email" required />
+            </label>
+          </div>
+          <div class="modal-form-item">
+            <label for="comment">
+              <textarea name="franchise-comment" id="franchise-comment" placeholder="Comment"></textarea></label>
+          </div>
+          <button type="submit" class="button button-franchise">Submit</button>
+        </form>
+      </div>
+    </div>
+
   </div>
 </section>
