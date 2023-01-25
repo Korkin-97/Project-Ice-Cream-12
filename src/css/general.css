@@ -50,7 +50,8 @@ img {
 }
 
 .button {
-  cursor: pointer;
+  scroll-behavior: smooth;
+  cursor: url('../images/cursor_yellow.svg'), pointer;
   border-radius: 10px;
   height: 42px;
 }
@@ -96,7 +97,8 @@ img {
 
 .link {
   text-decoration: none;
-  cursor: pointer;
+  scroll-behavior: smooth;
+  cursor: url('../images/cursor_yellow.svg'), pointer;
 }
 
 .container {
