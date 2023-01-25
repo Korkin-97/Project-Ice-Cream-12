@@ -213,7 +213,6 @@
   }
 }
 
-
 /* Modals */
 
 .backdrop {
@@ -236,26 +235,24 @@
 
 /* Our Location  */
 
-
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
+
   max-width: 280px;
-  
-  background-color: #FCFCFC;
+
+  background-color: #fcfcfc;
   border-radius: 10px;
-  border: 2px solid #F8D24E;
-  }
+  border: 2px solid #f8d24e;
+}
 
 .modal.map {
   max-height: 365px;
   padding: 28px;
 }
-
 
 .title-readmore {
   margin: 0 auto;
@@ -279,7 +276,7 @@
   width: 134px;
   height: 42px;
   padding: 12px;
-  background: #F8D24E;
+  background: #f8d24e;
   border: transparent;
   border-radius: 10px;
 
@@ -326,9 +323,7 @@
   }
 }
 
-
 /* Franchise */
-
 
 .modal.franchise {
   /* max-height: 674px; */
@@ -343,7 +338,7 @@
   width: 224px;
 }
 
-.modal.franchise .title-readmore{
+.modal.franchise .title-readmore {
   width: 224px;
 }
 
@@ -376,7 +371,7 @@ textarea::placeholder {
   color: var(--black-text-color);
 }
 
-textarea[id="franchise-comment"] {
+textarea[id='franchise-comment'] {
   resize: none;
   /* width: 100%; */
   width: 198px;
@@ -394,11 +389,11 @@ textarea[id="franchise-comment"] {
   width: 114px;
   height: 42px;
   padding: 12px;
-  background: #F8D24E;
+  background: #f8d24e;
   border: transparent;
   border-radius: 10px;
   color: #131313;
-  
+
   font-weight: 600;
   font-size: 12px;
   line-height: 1.25;
@@ -410,6 +405,9 @@ textarea[id="franchise-comment"] {
   .modal.franchise {
     max-width: 568px;
     padding: 32px 60px;
+
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .title-readmore {
@@ -427,7 +425,7 @@ textarea[id="franchise-comment"] {
   .modal.franchise .discription-readmore {
     width: 448px;
   }
-  
+
   .modal.franchise .title-readmore {
     width: 322px;
   }
@@ -435,7 +433,7 @@ textarea[id="franchise-comment"] {
     max-width: 100%;
     width: 342px;
   }
-  textarea[id="franchise-comment"] {
+  textarea[id='franchise-comment'] {
     width: 342px;
   }
 }
