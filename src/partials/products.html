@@ -12,11 +12,116 @@
             Soft ice cream with a delicate taste. Made with milk, cream, sugar
             and natural stabilizer
           </p>
-          <button type="button" class="product-item-btn button">
+          <button type="button" class="product-item-btn button" prod-modal-open>
             <svg class="product-btn-icon" width="40" height="16">
-              <use href="../src/images/Icons.svg#icon-Arrow"></use>
+              <use href="./images/Icons.svg#icon-Arrow"></use>
             </svg>
           </button>
+          <div class="backdrop-prod is-hidden" prod-modal>
+            <div class="modal-ingredients">
+              <button class="modal-close">
+                <svg class="modal-close-icon" width="20" height="20">
+                  <use
+                    href="./images/Icons.svg#icon-clarity-close-line"
+                    prod-modal-close
+                  ></use>
+                </svg>
+              </button>
+              <h2 class="header-ingredients">Chocolate icecream</h2>
+              <div class="wrap">
+                <div class="circle">
+                  <img
+                    srcset="
+                      ./images/products/chololate-ice-cream-modal-min.png    1x,
+                      ./images/products/chololate-ice-cream-modal@2x-min.png 2x
+                    "
+                    src="./images/products/chololate-ice-cream-modal-min.png"
+                    class="chocolate-ice-cream"
+                    alt="chocolate ice-cream"
+                    width="132"
+                  />
+                </div>
+              </div>
+              <ul class="nutrition-value">
+                <li class="list decoration">
+                  <div class="number">320</div>
+                  kcal
+                </li>
+                <li class="list decoration">
+                  <div class="number">4g</div>
+                  Prote...
+                </li>
+                <li class="list decoration">
+                  <div class="number">8,2g</div>
+                  Fats
+                </li>
+                <li class="list decoration">
+                  <div class="number">40,4g</div>
+                  Carbs
+                </li>
+              </ul>
+              <table class="ingredients">
+                <caption class="ingredients-caption">
+                  Ingredients
+                </caption>
+                <tr>
+                  <td>Milk</td>
+                  <td>100ml</td>
+                </tr>
+                <tr>
+                  <td>Belgian chocolate</td>
+                  <td>20g</td>
+                </tr>
+                <tr>
+                  <td>Cream</td>
+                  <td>150 ml</td>
+                </tr>
+                <tr>
+                  <td>Cocoa powder</td>
+                  <td>30g</td>
+                </tr>
+                <tr>
+                  <td>Sugar</td>
+                  <td>40g</td>
+                </tr>
+                <tr>
+                  <td>Vanilla sugar</td>
+                  <td>10g</td>
+                </tr>
+              </table>
+              <form class="modal-form">
+                <div class="input-modal">
+                  <input
+                    type="text"
+                    required=""
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="name">Name</label>
+                </div>
+                <div class="input-modal">
+                  <input
+                    type="text"
+                    required=""
+                    autocomplete="off"
+                    placeholder=" "
+                  />
+                  <label for="phone">Phone</label>
+                </div>
+                <div class="input-modal comment">
+                  <textarea
+                    name="comment"
+                    id="comment"
+                    rows="5"
+                    placeholder=" "
+                    class="form-input"
+                  ></textarea>
+                  <label class="test" for="comment">Comment</label>
+                </div>
+                <button type="submit" class="submit-button">Submit</button>
+              </form>
+            </div>
+          </div>
         </div>
       </li>
       <li class="product">
@@ -30,7 +135,7 @@
           </p>
           <button type="button" class="product-item-btn button">
             <svg class="product-item-icon" width="40" height="16">
-              <use href="../src/images/Icons.svg#icon-Arrow"></use>
+              <use href="./images/Icons.svg#icon-Arrow"></use>
             </svg>
           </button>
         </div>
@@ -46,7 +151,7 @@
           </p>
           <button type="button" class="product-item-btn button">
             <svg class="product-item-icon" width="40" height="16">
-              <use href="../src/images/Icons.svg#icon-Arrow"></use>
+              <use href="./images/Icons.svg#icon-Arrow"></use>
             </svg>
           </button>
         </div>
