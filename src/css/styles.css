@@ -1,6 +1,7 @@
 /* ------------------------------------------example-------------------------------------- */
 html {
     scroll-behavior: smooth;
+    cursor: url(./images/cursor.svg), pointer;
 }
 
 #scrollTop {
@@ -15,7 +16,7 @@ html {
     text-align: center;
 
     background-color: #84a178;
-    background-image: url('scroll_up.png');
+    background-image: url('./images/scroll_up.png');
     background-size: 40px;
     background-position: 50%;
     background-repeat: no-repeat;
