@@ -1,7 +1,7 @@
 /* ------------------------------------------example-------------------------------------- */
 html {
     scroll-behavior: smooth;
-    cursor: url('./images/cursor.svg'), pointer;
+    cursor: url('../images/cursor.svg'), pointer;
 }
 
 #scrollTop {
