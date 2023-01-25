@@ -1,1 +1,61 @@
 /* ------------------------------------------example-------------------------------------- */
+html {
+    scroll-behavior: smooth;
+}
+
+#scrollTop {
+    display: inline-block;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 100;
+
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+    background-color: #84a178;
+    background-image: url('scroll_up.png');
+    background-size: 40px;
+    background-position: 50%;
+    background-repeat: no-repeat;
+
+    border: 8px solid #f8d24e;
+    border-radius: 50%;
+
+    transition: background-color 10ms linear, opacity .5s cubic-bezier(.4, 0, .2, 1), visibility .5s cubic-bezier(.4, 0, .2, 1);
+
+}
+
+@media screen and (min-width: 768px) {
+    #scrollup-button {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #scrollup-button {
+        width: 55px;
+        height: 55px;
+        bottom: 45px;
+        right: 45px;
+    }
+}
+
+.isShowBtn {
+    opacity: 0.5;
+    transition: 350ms;
+}
+
+.isShowBtn:hover,
+.isShowBtn:focus {
+    opacity: 1;
+    transition: 350ms;
+}
+
+
+.isShowBtn_hide {
+    opacity: 0;
+    visibility: hidden;
+}
