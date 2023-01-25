@@ -311,9 +311,6 @@
     width: 352px;
     margin-bottom: 20px;
   }
-  .textarea-modal {
-    width: 352px;
-  }
 
   .container-form {
     margin-top: 40px;
@@ -326,10 +323,6 @@
     font-size: 14px;
     line-height: 140%;
     color: #131313;
-  }
-
-  .textarea-modal {
-    width: 352px;
   }
 }
 
@@ -344,6 +337,12 @@
   padding-left: 12px;
   padding-top: 8px;
 
+}
+
+@media screen and (min-width: 768px) {
+  .textarea-modal {
+    width: 352px;
+  }
 }
 
 .btn-modal {
