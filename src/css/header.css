@@ -2,8 +2,9 @@
   display: flex;
   justify-content: space-between;
 
-  width: 280px;
-  padding: 12px 0 0 20px;
+  padding: 12px 20px  0 20px;
+  
+  
 }
 
 .site-logo {
@@ -45,6 +46,10 @@
 .icon-burger,
 .close-menu-icon {
   fill: var(--primary-white-color);
+}
+
+.header-nav-dekstop{
+  display: none;
 }
 
 .mobile-menu {
@@ -161,6 +166,11 @@
   .menu-logo {
     margin-bottom: 40px;
   }
+    .container-header{
+      width: 440px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -194,7 +204,9 @@
     display: flex;
     align-items: center;
   
-    padding: 12px 35px;
+    padding-left: 36px;
+    padding-top: 12px;
+    padding-bottom: 12px;
   
     background-color: var(--accent);
     border: transparent;
@@ -202,13 +214,17 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 1.21;
-  }
 
+  }
+  .header-decoration-btn{
+    padding-right: 35px;
+  }
   .container-header {
     width: 704px;
     padding: 20px 32px 0;
 
     justify-content: space-between;
+    align-items: center;
     margin: 0 auto;
   }
 
@@ -233,7 +249,49 @@
     width: 27px;
     height: 55px;
   }
+  .container-header {
+    display: flex;
+    justify-content: flex-start;
+    width:1168px;
+    padding: 28px 16px 0 16px;
+
+    }
+  .header-buttons{
+    width: 152px;
+  }
+  .header-burger{
+    display: none;
+  }
+
+  .header-nav-dekstop{
+    display: block;
+    /* width: 440px; */
+    height: 20px;
+    margin-left: 308px;
+    margin-right: 205px
+  }
+  .header-nav-list{
+    display: flex;
+  }
+  .header-nav-list .item + .item{
+    margin-left: 28px
+  }
+
+  .header-nav-list .link{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: 0;
+    color:var(--white-text-color) ;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  }
+  .header-nav-list .link:hover,
+  .header-nav-list .link:focus{
+    color: #F8D24E;
+  }
+ 
 }
-/* жека хуй */
+
 
 
