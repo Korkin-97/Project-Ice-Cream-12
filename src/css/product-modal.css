@@ -311,6 +311,9 @@
     width: 352px;
     margin-bottom: 20px;
   }
+  .textarea-modal {
+    width: 352px;
+  }
 
   .container-form {
     margin-top: 40px;
